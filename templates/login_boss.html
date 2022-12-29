@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+<form action="#" method="post">
+    <h1>{{login_or_signin}}</h1>
+    <p>Name:</p>
+    <p><input type="text" name="nm"></p>
+    <p>Password: </p>
+    <p><input type="password" name="psw"></p>
+    <p><input type="submit" value="submit"></p>
+
+</form>
+{% endblock %}

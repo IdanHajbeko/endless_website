@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <title>Home Page</title>
+    </head>
+    <body>
+        <h1>Home Page</h1>
+    <p1>this is the endles web in the serch bar put at the end of the name / and after the / put what ever you want</p1>
+    </body>
+<html>
+
+
+
+<!doctype html>
+<html>
+<head>
+    <title>endless</title>
+    </head>
+    <body>
+        <h1>ensless</h1>
+    <h1>this is the web of {{name_web}}!</h1>
+    </body>
+<html>
+
+
+
+
+
+
+
+
+
+
+@app.route("/login/<user_name>/<psw>")
+def login(user_name, psw):
+    if user_name in usernames:
+        if psw in pasword:
+            return render_template("how_to_use.html")
+        else:
+            return render_template("login_worng_psw.html")
+    else:
+        return render_template("login_worng_user_name.html")
+
+
+
+
+
+
+
+          <h2>search every thing(endless)</h2>
+    <p><input type="text" name="endless" placeholder="Search every thing"></p>
+  <p><input type="submit" value="search"></p>
+
+
+
+
+
+
+
+
+
+file = open("sample.txt", "r")
+line_count = 0
+for line in file:
+    if line != "\n":
+        line_count += 1
+file.close()
+
+print(line_count)
+
+
+

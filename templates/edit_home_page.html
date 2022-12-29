@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<form action="#" method="post">
+    <h1>here you can edit the home page of your website</h1>
+    <p>put here profile picture:</p>
+    <p><input type="text" name="img_url" placeholder="image url"></p>
+    <p>tell us about your self </p>
+    <p><input type="text" name="txt"></p>
+    <p><input type="submit" value="submit"></p>
+    <h3>{{respon}}</h3>
+</form>
+{% endblock %}
